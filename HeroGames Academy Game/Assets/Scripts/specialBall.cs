@@ -32,7 +32,7 @@ public class specialBall : MonoBehaviour
     {
         if (!isMoving && swipeInputs.check)
         {
-            rb.AddForce(swipeInputs.checkVector * Time.deltaTime /2);
+            rb.AddForce(swipeInputs.checkVector * Time.deltaTime);
         }
 
         if (rb.transform.position.z > pota.z + 3f || rb.transform.position.y < pota.y - 5f)
